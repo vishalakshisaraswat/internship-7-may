@@ -1,0 +1,17 @@
+header {
+    /* background-color: darksalmon; */
+    text-align: center;
+    font-size: 50px;
+}
+
+body {
+    background-image: url(https://th.bing.com/th/id/OIP.D6lZX_7xGTPwBbrwaZxbhAHaEo?pid=ImgDet&rs=1);
+    font-size: 20px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
