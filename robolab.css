@@ -7,3 +7,32 @@
 header {
     background-color: rgb(183, 179, 179);
 }
+
+.together {
+    display: inline-block;
+}
+
+h1 {
+    text-align: center;
+    margin: 0 100px;
+    font-family: fantasy;
+    color:rgb(31, 68, 70);
+    font-size: 80px;
+}
+
+.symbols {
+    padding-top: 20px;
+}
+
+.welcome > img {
+    z-index: "-1";
+    position: absolute;
+}
+
+.welcome > h2 {
+    z-index: "3";
+}
+
+.welcome {
+    display= inline-block;
+}
