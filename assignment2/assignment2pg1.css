@@ -1,0 +1,126 @@
+.firstline {
+    display: inline-block;
+    margin-top: 29px;
+} 
+header {
+    /* background-color: red; */
+    height: 480px;
+    width: 1366;
+    background-image: linear-gradient(to bottom, #9D0E0E00 0%, #4F0707 100%) , url(/assignment2/shutterstock_348320018\ new.png);
+}
+
+#login {
+    margin-left: 1015px;
+    font-family: poppins;
+    font-weight: medium;
+    font-size: 16px;
+    color: #FFFF;
+}
+
+#CreateAccount {
+    font-family: poppins;
+    font-weight: medium;
+    font-size: 16px;
+    color: #FFFF;
+    padding-top:12px ;
+    padding-left:15px ;
+    padding-bottom: 11px;
+    padding-right: 14px;
+    border: 1px solid #FFFF;
+    border-radius: 3px;
+    margin-left: 14px;
+}
+
+h1 {
+    text-align: center;
+    font-family: poppins;
+    font-weight: semibold;
+    font-size: 70px;
+    color: #EB2929;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 1px solid #707070;
+    width: 147px;
+    height: 147px;
+    margin-left: 649px;
+    padding-top: 24px;
+}
+
+h2 {
+    font-family: poppins;
+    font-weight: semibold;
+    font-size: 36px;
+    color: #FFFFFF;
+    text-align: center;
+
+}
+
+#location {
+    width: 245px;
+    height: 60px;
+    margin-left: 312px;
+}
+
+#restraunts {
+    height: 60px;
+    width: 477px;
+    margin-left: 21px;
+}
+
+.form-control {
+    display: inline-block;
+}
+
+h3 {
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 30px;
+    color: #192F60;
+}
+
+p1 {
+    font-family: poppins;
+    font-weight: regular;
+    font-size: 18px;
+    color: #8C96AB;
+}
+
+.cards {
+    height: 160px;
+    width: 360px;
+    box-shadow: 0px 3px 6px #00000029;
+    margin-right: 15px;
+    margin-top: 33px;
+    display: inline-block ;
+
+}
+
+.oneline {
+    display: inline-block !important;
+}
+
+p2 {
+    font-family: poppins;
+    font-weight: regular;
+    font-size: 14px;
+    color: #8C96AB;
+}
+
+img {
+    height: 160px;
+    width: 160px;
+    margin-top: 0px;
+}
+
+.content {
+    margin-left: 29px;
+    margin-top: 0px;
+}
+
+p3 {
+    font-family: poppins;
+    font-weight: semibold;
+    font-size: 18px;
+    margin-top: 25px;
+    color: #192F60;
+}
