@@ -1,23 +1,13 @@
-const express = require('express')
-const app = express()
-const port = 3000
-const users = [
-    {
-        name : 'John',
-        age : 21,
-    },
-    {
-        name : 'Jack',
-        age : 42,
-    },
-    {
-        name : 'Neelam',
-        age : 33,
-    },
-]
 
-const locations = 
-[
+// CRUD;
+//            http methods     CRUD methods
+// C - Create  -> post         insertOne, insertMany
+// R -> Read   -> get          find, findOne
+// U -> Update  -> put         updateOne, updateMany
+// D -> Delete -> delete       deleteOne, deleteMany
+
+
+db.locations.insertMany([
     {
       "location_id": 1,
       "location_name": "Ashok Vihar Phase 3, New Delhi",
@@ -116,20 +106,10 @@ const locations =
       "state": "Delhi",
       "country_name": "India"
     }
-  ]
+  ])
 
-app.get('/', (req, res) => {
-    res.send('Hello World! Namaste🙏🙏')
-})
+    
+db.locations.find().pretty();
 
-app.get('/userList', (req, res) => {
-    res.send(users)
-})
 
-app.get('/locations', (req, res) => {
-    res.send(locations)
-})
-
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+db.restaurant.find().pretty();

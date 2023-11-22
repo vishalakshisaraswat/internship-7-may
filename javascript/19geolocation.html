@@ -14,23 +14,62 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.4.1/dist/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
 </head>
 
+<style>
+    body{
+        background-image:  url(http://www.pixelstalk.net/wp-content/uploads/2016/07/Download-Free-Weather-Background.jpg);
+    }
 
+    .container{
+        margin-top: 10em;
+        background-color: black;
+        color: antiquewhite;
+        padding-top: 100px;
+        padding-bottom: 100px;
+        position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    }
+
+    h2{
+        text-decoration: double;
+        text-transform: capitalize;
+    }
+
+    button{
+        font-size: 20px;
+    }
+
+    p{
+        font-size: 20px;
+        color: rgb(50, 228, 228);
+    }
+</style>
 
 <body>
     
     <div class="container" style="position: absolute;">
-        <img src="https://www.saga.co.uk/contentlibrary/saga/publishing/verticals/technology/apps/shutterstock_240459751.jpg" width="100%" style="z-index: -2;" />
         <h2>Click the button to find weather details</h2>
-        <button onClick="geolocation()">Weather</button>
+        <button class="btn-primary" onClick="geolocation()">Weather</button>
         <p id="out"></p>
-        <p id="location"></p>
         <p id="weather"></p>
+        <p id="windSpeed"></p>
+        <p id="location"></p>
+        <p id="main"></p>
+        
+        
     </div>
 
     <script>
         let x = document.getElementById("out");
-        let y = document.getElementById("location");
-        let z = document.getElementById("weather");
+        let y = document.getElementById("weather");
+        let w = document.getElementById("windSpeed");
+        let z = document.getElementById("location");
+        let m = document.getElementById("main");
+        
+        
 
         function geolocation(){
             if(navigator.geolocation){
@@ -54,7 +93,11 @@
             .then((res) => {
                 console.log("Weather data: ", res);
                 y.innerText = `Temperature : ${res.main.temp} K`;
-                z.innerText = `City : ${res.name}`;
+                w.innerText = `Windspeed : ${res.wind.speed}`;
+                z.innerText = `Place : ${res.name} [${res.sys.country}]`;
+                m.innerText = `Mainly : ${res.weather[0].main}`;
+                
+                
             })
         }
 
