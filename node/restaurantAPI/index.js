@@ -1,6 +1,11 @@
 const express = require('express')
 const app = express()
+const mongo = require('mongodb');
+const MongoClient = mongo.MongoClient;
 const port = 3000
+const MONGO_URL = 'mongodb://localhost:27017'
+let db;
+
 const users = [
     {
         name : 'John',
@@ -132,4 +137,14 @@ app.get('/locations', (req, res) => {
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
+})
+
+
+//mongo connections
+
+MongoClient.connect(MONGO_URL,(err,client)=> {
+  console.log("Mongodb connected");
+  if(err) console.log("Error while connecting");
+  db = client.db("edureka");
+  app.listen(port, () => console.log(`Server started on the port ${port}`));
 })
