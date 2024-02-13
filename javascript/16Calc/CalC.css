@@ -1,0 +1,38 @@
+.container{
+    text-align: center;
+    margin-top: 87px
+}
+
+table{
+    margin: auto;
+}
+
+h1{
+    color: #ba3d3d;
+    border: 4px solid rgb(63, 59, 59);
+    background-color: #eeeaea;
+}
+
+.calculator{
+    display: inline-block;
+    padding: 10px;
+    border: 5px solid rgb(219, 115, 115);
+    background-color: #efb2b2;
+}
+
+button{
+    width: 66px;
+    height: 56px;
+    font-size: 37px;
+    border-radius: 26px;
+    border-color: rgb(181, 115, 115);
+}
+
+input{
+    height: 46px;
+    margin-bottom: 10px;
+    width: 262px;
+    border: 2px solid gray;
+    border-radius: 11px;
+    font-size: 35px;
+}
